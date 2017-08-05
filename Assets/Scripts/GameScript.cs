@@ -66,19 +66,19 @@ public class GameScript : MonoBehaviour {
         }
 
         //バンク
-        if (Input.GetKey(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow) && damage < 100) //左バンク
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow) && damage < 100) //左バンク
         {
             transform.Rotate(axis_x, -30f);
         }
-        if (Input.GetKey(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow) && damage < 100) //右バンク
+        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow) && damage < 100) //右バンク
         {
             transform.Rotate(axis_x, 30f);
         }
-        if (Input.GetKey(KeyCode.W) || Input.GetKeyUp(KeyCode.LeftArrow) && damage < 100) //左バンク回復
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyUp(KeyCode.LeftArrow) && damage < 100) //左バンク回復
         {
             transform.Rotate(axis_x, 30f);
         }
-        if (Input.GetKey(KeyCode.S) || Input.GetKeyUp(KeyCode.RightArrow) && damage < 100) //右バンク回復
+        if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyUp(KeyCode.RightArrow) && damage < 100) //右バンク回復
         {
             transform.Rotate(axis_x, -30f);
         }
