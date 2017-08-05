@@ -74,11 +74,11 @@ public class GameScript : MonoBehaviour {
         {
             transform.Rotate(axis_x, 30f);
         }
-        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyUp(KeyCode.LeftArrow) && damage < 100) //左バンク回復
+        if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.LeftArrow) && damage < 100) //左バンク回復
         {
             transform.Rotate(axis_x, 30f);
         }
-        if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyUp(KeyCode.RightArrow) && damage < 100) //右バンク回復
+        if (Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.RightArrow) && damage < 100) //右バンク回復
         {
             transform.Rotate(axis_x, -30f);
         }
