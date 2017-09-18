@@ -9,5 +9,5 @@ $ cd /path/to/the/directory/
 $ git clone https://github.com/KosukeTakahashi/Dodge.git
 ```
 
-1. Open it with Unity Editor (5.6.3p1 is recommended)
-1. Now you can play it.
+2. Open it with Unity Editor (5.6.3p1 is recommended)
+2. Now you can play it.
